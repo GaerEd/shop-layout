@@ -1,0 +1,130 @@
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+.wrapper__slider
+    background-color: #F7F7F7
+    .swiper
+        max-width: 1600px
+        .swiper-button-next, .swiper-button-prev
+            box-sizing: border-box
+            padding: 8px
+            width: 47px
+            height: 47px
+            background: rgba(42, 42, 42, 0.15)
+            color: #F16D7F
+        .swiper-button-disabled
+            color: #000000
+        .swiper-wrapper
+            .swiper-slide
+                    display: flex
+                    justify-content: center
+                    img
+                        max-height: 777px
+
+.card__product
+    max-width: 1142px
+    position: relative
+    top: -64px
+    z-index: 1
+    background-color: #FFFFFF
+    margin: 0 auto
+    .card__block
+        margin-bottom: 64px
+        border: 1px solid #EAEAEA
+        padding: 64px 0
+        display: flex
+        flex-direction: column
+        align-items: center
+        .card__title
+            margin-top: 0
+            margin-bottom: 12px
+            font-size: 14px
+            line-height: 17px
+            color: $color-site
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: center
+            &::after
+                position: absolute
+                content: ''
+                width: 63px
+                height: 3px
+                background: #EF5B70
+                top: 26px
+        .card__subtitle
+            margin: 12px 0 48px 0
+            font-size: 18px
+            line-height: 22px
+            color: #4D4D4D
+        .card__description
+            max-width: 555px
+            margin-bottom: 33px
+            font-size: 14px
+            line-height: 17px
+            color: #5E5E5E
+            text-align: center
+        .card__price
+            margin-bottom: 64px
+            font-size: 24px
+            line-height: 29px
+            color: #EF5B70
+        .card__parameters
+            max-width: 380px
+            display: flex
+            justify-content: space-between
+            margin-bottom: 48px
+            .card__parameters__item
+                text-transform: uppercase
+                span
+                    margin-right: 9px
+                    font-size: 14px
+                    line-height: 17px
+                    color: #6F6E6E
+                &:not(:last-child)
+                    margin-right: 23px
+        .product__btn
+            cursor: pointer
+            padding: 10px 25px
+            background: none
+            font-size: 16px
+            line-height: 19px
+            color: #F26376
+            border: 1px solid #FF6A6A
+            display: flex
+            align-items: flex-end
+            img
+                margin-right: 22px
+
+
+@media screen and ( max-width: 768px )
+    .wrapper__slider
+        .swiper
+            .swiper-wrapper
+                .swiper-slide
+                    img
+                        max-height: 624px
+        
+    .card__product
+        top: 0
+
+
+@media screen and ( max-width: 375px )
+    .wrapper__slider
+        .swiper
+            .swiper-wrapper
+                .swiper-slide
+                    img
+                        max-height: 454px
+
+
+    .card__parameters
+            .card__parameters__item
+                .card__description
+                    padding: 0 5px
+                span
+                    font-size: 10px
+                    line-height: 12px
+                &:not(:last-child)
+                    margin-right: 10px

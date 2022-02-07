@@ -1,0 +1,212 @@
+@import _index
+@import _catalog
+@import _product
+@import _cart
+@import _registration
+
+
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+*
+    font-family: "Lato", sans-serif
+    font-size: 14px
+    font-weight: 300
+    line-height: 17px
+
+body
+    min-height: 100vh
+
+.container
+    max-width: 1142px
+    margin: 0 auto
+    padding: 0 16px
+
+a 
+    text-decoration: none
+
+.header__menu
+    background-color: $bgc-dark
+    height: 75px
+
+.menu__item
+    padding: 16px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.logo
+    margin-right: 40px
+
+.burger
+    position: relative
+
+.menu__list
+    display: none
+    padding: 30px
+    position: absolute
+    top: 75px
+    right: -200px
+    z-index: 1
+    max-width: 232px
+    max-height: 764px
+    background: #FFFFFF
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+
+.menu__list.active
+    display: block
+    right: 0
+    transition: all 0.3s ease 0.3s
+
+.menu__title
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 14px
+    line-height: 17px
+    color: #000000
+
+.male__list, .womens__list, .kids__list
+    padding: 0
+    margin-bottom: 20px
+
+.red__list
+    margin-bottom: 12px
+    text-transform: uppercase
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: $color-site
+
+.menu__link
+    cursor: pointer
+    padding-left: 20px
+    list-style: none
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #6F6E6E
+
+.menu__link:hover
+    text-decoration: underline
+
+.user
+    margin: 0 34px
+
+.footer
+    background-image: url("../img/footer-bgc2.png")
+    background-position: 0 0
+    background-repeat: no-repeat
+    background-size: cover
+
+.footer__subscribe
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: end
+    padding: 10% 0
+
+.subscribe__left
+    display: grid
+    justify-items: center
+
+.subscribe__text
+    margin: 15px 0 0 0
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    text-align: center
+
+    color: #222224
+
+.subscribe__title
+    margin-bottom: 0
+    font-weight: bold
+    font-size: 24px
+    line-height: 167.2%
+    text-align: center
+    color: #222224
+
+.subscribe__subtitle
+    margin-top: 0
+    font-weight: normal
+    font-size: 18px
+    line-height: 167.2%
+    text-align: center
+    color: #222224
+
+.form__subscribe
+    display: flex
+    justify-content: center
+    max-width: 356px
+    margin: 0 auto
+
+.form__email
+    background-color: #E1E1E1
+    border: 0
+    border-radius: 50px 0 0 50px
+    padding: 19px 0 19px 24px
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #222224
+    opacity: 0.67
+
+.form__btn
+    cursor: pointer
+    border: 0
+    background-color: $color_site
+    border-radius: 0 50px 50px 0
+    padding: 19px 20px
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #FFFFFF
+
+.form__btn:hover
+    background-color: #E05C6E
+
+.footer__copy
+    background-color: $bgc-dark
+
+.footer__item
+    max-width: 1142px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.copy
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #FBFBFB
+
+.social__networks
+    width: 150px
+    height: 30px
+    display: grid
+    grid-gap: 10px
+    grid-template-columns: 1fr 1fr 1fr 1fr
+
+.social__link
+    background-color: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+
+.red__insta
+    background-color: $color-site
+
+
+
+@media screen and ( max-width: 768px )
+    .footer__subscribe
+        grid-template-columns: 1fr
+
+    .form__email
+        padding: 19px 0 19px 24px
+
+
+
+@media screen and ( max-width: 450px )
+    .user, .cart
+        display: none
+

@@ -1,0 +1,88 @@
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+
+.block_center
+    display: flex
+    justify-content: space-evenly
+    .registration
+        margin-top: 64px
+        margin-bottom: 96px
+        margin-right: 22px
+        .registration__form 
+            display: flex
+            flex-direction: column
+            .registration__title 
+                margin-bottom: 20px
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+            .registration__input
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+                padding: 13px 0 13px 17px
+                &:not(:last-child)
+                    margin-bottom: 20px
+            .registration__gender
+                margin-top: 31px
+                margin-bottom: 33px
+            p
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+        .registration__btn 
+            margin-top: 25px
+            border: 0
+            padding: 16px 29px
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            background-color: $color-site
+            img
+                margin-left: 20px
+    .perks
+        margin-top: 64px
+        .perks__title
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            margin-bottom: 22px
+        .perks__description
+            font-weight: 300
+            font-size: 24px
+            line-height: 29px
+            color: #000000
+            margin-bottom: 21px
+        ul
+            padding: 0
+            .perks__list
+                list-style: none
+                font-weight: 300
+                font-size: 24px
+                line-height: 29px
+                color: #000000
+                margin-bottom: 16px
+                &::before
+                    content: url('../icon/check.svg')
+                    margin-right: 20px
+
+
+@media screen and ( max-width: 425px )
+    .block_center
+        display: flex
+        flex-direction: column
+        .registration
+            margin-top: 41px
+            margin-bottom: 0
+            width: 100%
+        .perks
+            margin-top: 40px
+            margin-bottom: 96px
+            width: 100%
+
+    

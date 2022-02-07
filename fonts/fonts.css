@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.eot');
+    src: local('Roboto'), local('Roboto-Regular'),
+        url('Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Black.eot');
+    src: local('Lato Black'), local('Lato-Black'),
+        url('Lato-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Italic.eot');
+    src: local('Lato Italic'), local('Lato-Italic'),
+        url('Lato-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Semibold.eot');
+    src: local('Lato Semibold'), local('Lato-Semibold'),
+        url('Lato-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Bold.eot');
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('Lato-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Light.eot');
+    src: local('Lato Light'), local('Lato-Light'),
+        url('Lato-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}

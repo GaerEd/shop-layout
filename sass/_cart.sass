@@ -1,0 +1,210 @@
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+.cart__page
+    .cart__margin
+        margin-top: 96px
+        margin-bottom: 128px
+        display: flex
+        justify-content: space-between
+        .cart__card 
+            width: 100%
+            margin-right: 128px
+            .card__goods
+                box-sizing: border-box
+                display: flex
+                align-items: flex-start
+                justify-content: space-between
+                max-height: 306px
+                margin-bottom: 40px
+                box-shadow: (17px 19px 24px rgba(58, 57, 57, 0.13))
+                &:hover
+                    box-shadow: (17px 19px 24px rgba(0, 0, 0, 0.13))
+                .goods__item
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+                    .card__img
+                        margin-right: 31px
+                        max-height: 306px
+                    .goods__block 
+                        max-width: 210px
+                        .goods__title
+                            font-size: 24px
+                            line-height: 29px
+                            color: #222222
+                            margin: 28px 0 42px 0
+                        .goods__subtitle
+                            margin: 0
+                            font-size: 22px
+                            line-height: 26px
+                            color: #575757
+                            .price__red
+                                font-size: 22px
+                                line-height: 26px
+                                color: #EF5B70
+                            &:not(:last-child)
+                                margin-bottom: 6px
+                .close__btn
+                    border: 0
+                    background: none
+                    cursor: pointer
+                    margin-top: 28px
+                    .close__img
+                        width: 18px
+                        height: 18px
+            .card__btn
+                display: flex
+                justify-content: space-between
+                margin-top: 32px
+                button
+                    cursor: pointer
+                    padding: 16px 40px
+                    background: none
+                    border: 1px solid #A4A4A4
+                    font-weight: 300
+                    font-size: 14px
+                    line-height: 17px
+                    color: #000000
+    .checkout
+        max-width: 360px
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        .checkout__form
+            max-height: 306px
+            margin-bottom: 57px
+            .form__title 
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #222222
+            input
+                width: 100%
+                padding: 13px 0 13px 13px
+                font-weight: 300
+                font-size: 13px
+                line-height: 16px
+                color: #B1B1B1
+                &:not(:last-child)
+                    margin-bottom: 20px
+            .adress__btn 
+                cursor: pointer
+                max-width: 123px
+                background: none
+                padding: 10px 15px
+                border: 1px solid #A4A4A4
+        .checkout__product 
+            background: #F5F3F3
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding: 39px 44px 42px 44px
+            box-sizing: border-box
+            .grand__total
+                display: flex
+                flex-direction: column
+                align-items: flex-end
+                padding-bottom: 21px
+                border-bottom: 1px solid #E2E2E2
+                margin-bottom: 17px
+                .up__total
+                    margin: 0
+                    font-size: 11px
+                    line-height: 13px
+                    color: #4A4A4A
+                    margin-bottom: 12px
+                .down__total
+                    margin: 0
+                    font-weight: 300
+                    font-size: 16px
+                    line-height: 19px
+                    color: #222222
+                    .total__red
+                        font-weight: bold
+                        font-size: 16px
+                        line-height: 19px
+                        color: $color-site
+            .checkout__btn 
+                cursor: pointer
+                border: 0
+                background: $color-site
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #FFFFFF
+                padding: 15px 40px
+
+
+@media screen and ( max-width: 768px )
+    .cart
+        .cart__margin
+            display: flex
+            flex-direction: column
+            align-items: stretch
+            justify-content: space-between
+            .cart__card
+                width: 100%
+                margin-right: 0
+                margin-bottom: 64px
+                .card__goods
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+            .checkout
+                max-width: 750px
+                display: grid
+                grid-template-columns: 1fr 1fr
+                align-items: center
+                .checkout__form
+                    input
+                        max-width: 270px
+
+
+@media screen and ( max-width: 375px )
+    .cart__page
+        .cart__margin
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            .cart__card
+                .card__goods
+                    .goods__item 
+                        .card__img 
+                            max-width: 144px
+                        .goods__block 
+                            .goods__title
+                                margin: 13px 0 25px 0
+                                font-size: 16px
+                                line-height: 19px
+                            .goods__subtitle 
+                                font-weight: normal
+                                font-size: 14px
+                                line-height: 17px
+                                .price__red
+                                    font-size: 14px
+                                    line-height: 17px
+                                &:not(:last-child)
+                                    margin-bottom: 4px
+                    .close__btn
+                        border: 0
+                        background: none
+                        cursor: pointer
+                        margin-top: 13px
+                        .close__img
+                            width: 9px
+                .card__btn
+                    display: flex
+                    justify-content: space-between
+                    margin-top: 32px
+                    button
+                        padding: 9px 18px
+                        font-size: 12px
+                        line-height: 14px
+        .checkout
+            .checkout__form
+                display: flex
+                flex-direction: column
+                align-items: flex-start
+                input
+                    max-width: 330px

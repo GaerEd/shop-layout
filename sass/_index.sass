@@ -1,0 +1,274 @@
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+
+.header__content
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(2,0,36,1) 40%, rgba(241,228,230,1) 40%)
+    width: 100%
+    margin: 0 auto
+    display: grid
+    grid-template-columns: 50% 50%
+    margin-bottom: 63px
+    img
+        width: 100%
+
+.block__title
+    background-color: #F1E4E6
+    padding-left: 60px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    position: relative
+
+.block__title::before
+    position: absolute
+    content: ''
+    width: 12px
+    height: 92px
+    left: 5%
+    background-color: $color-site
+
+.content__title
+    margin: 0
+    font-weight: 900
+    font-size: 48px
+    line-height: 58px
+    color: #222222
+    text-transform: uppercase
+
+.content__subtitle
+    margin: 0
+    font-weight: bold
+    font-size: 32px
+    line-height: 38px
+    color: #222222
+    text-transform: uppercase
+
+.red
+    font-weight: bold
+    font-size: 32px
+    line-height: 38px
+    color: $color-site
+    text-transform: uppercase
+
+.categories 
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    .categories__link 
+        position: relative
+        .categories__img
+            filter: brightness(0.4)
+            width: 100%
+            height: 100%
+        .categories__description
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            .suptitle__categories
+                margin: 0
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #FFFFFF
+                text-transform: uppercase
+            .red__categories
+                margin: 0
+                font-weight: bold
+                font-size: 24px
+                line-height: 29px
+    .accesories__block 
+        grid-column-start: 1
+        grid-column-end: 4
+        margin-bottom: 94px
+
+
+
+
+.catalog__title
+    margin: 0
+    font-weight: normal
+    font-size: 30px
+    line-height: 36px
+    color: #222222
+    text-align: center
+
+.catalog__suptitle
+    margin: 0 0 48px 0
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: #9F9F9F
+    text-align: center
+
+.fetured__items
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+    margin-bottom: 48px
+    .product__item
+        background-color: #F8F8F8
+        width: 100%
+        height: 100%
+        .product__img
+            position: relative
+            img
+                display: block
+                width: 100%
+                height: 100%
+        .product__hover
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            display: flex
+            align-items: center
+            justify-content: center
+            background: rgba(58, 56, 56, 0.86)
+            opacity: 0
+        .product__hover:hover
+            opacity: 1
+        .product__btn
+            display: flex
+            align-items: center
+            cursor: pointer
+            background: none
+            max-height: 65px
+            border: solid 2px white
+            padding: 14px 16px
+            font-weight: normal
+            font-size: 20px
+            line-height: 17px
+            color: #FFFFFF
+            .indent
+                max-width: 26px
+                margin-right: 10px
+        .product__title
+            padding: 0 18px
+            margin: 24px 0 13px 0
+            font-weight: normal
+            font-size: 13px
+            line-height: 16px
+            color: #000000
+        .product__description
+            padding: 0 28px 0 18px
+            margin: 0 0 18px 0
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #5D5D5D
+        .price
+            padding: 0 18px
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: $color-site
+
+.center__btn
+    text-align: center
+
+.products__btn
+    border: 0
+    cursor: pointer
+    padding: 15px 40px
+    font-weight: normal
+    font-size: 16px
+    line-height: 19px
+    color: #F26376
+    border: solid 1px 
+    background: none
+
+.products__btn:hover
+    color: #FFFFFF
+    background: $color-site
+
+.advantagye
+    background-color: $bgc-dark
+    padding: 50px 0
+    margin-top: 95px
+
+.advantagye__item
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    align-items: center
+    grid-gap: 30px
+    padding: 0 35px
+
+.advantaye__element
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.advantagye__title
+    margin: 16px 0
+    font-weight: normal
+    font-size: 20px
+    line-height: 24px
+    color: #FBFBFB
+
+.advantagye__suptitle
+    max-width: 350px
+    margin: 0
+    font-weight: 300
+    font-size: 14px
+    line-height: 17px
+    color: #FBFBFB
+    text-align: center
+
+
+@media screen and ( max-width: 1000px )
+    .content__title 
+        font-size: 38px
+        line-height: 46px
+
+    .content__subtitle, .red
+        font-size: 20px
+        line-height: 24px
+
+
+
+@media screen and ( max-width: 768px )
+    .content__title 
+        font-size: 28px
+        line-height: 35px
+
+    .content__subtitle, .red
+        font-size: 20px
+        line-height: 24px
+
+    .fetured__items
+        grid-template-columns: repeat(2, 1fr)
+
+    .advantagye__item
+        grid-template-columns: 1fr
+
+    .categories
+        display: flex
+        flex-direction: column
+        align-content: space-around
+        align-items: center
+        .categories__item
+            max-width: 350px
+
+
+
+@media screen and ( max-width:  360px)
+    .header__content img
+        display: none
+
+    .header__content
+        grid-template-columns: 1fr
+        .block__title
+            padding-left: 60px
+            height: 365px
+
+
+
+    .fetured__items
+        grid-template-columns: 1fr

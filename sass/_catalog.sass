@@ -1,0 +1,179 @@
+$bgc-dark: #222222
+$color-site: #F16D7F
+
+
+.new__arrivals
+    padding: 60px 0
+    background-color: #f8f3f4
+    .arrivals__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        .arrivals__title
+            font-weight: normal
+            font-size: 24px
+            line-height: 29px
+        .arrivals__menu
+            a
+                font-weight: 300
+                font-size: 14px
+                line-height: 17px
+                color: #636363
+                text-transform: uppercase
+                &:hover
+                    color: $color-site
+                &:focus
+                    color: $color-site
+
+.catalog
+    .filter
+        margin: 51px 0 64px 0
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        .filter__item
+            padding-right: 320px
+            position: relative
+            .filter__menu
+                display: none
+                position: absolute
+                top: 0
+                left: 0
+                width: 360px
+                background: #FFFFFF
+                box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+                padding:  46px 16px 16px 16px
+                z-index: 1
+                overflow-y: auto
+            &:hover .filter__menu
+                display: block
+            &:hover img
+                display: none
+                top: 13px
+                left: 16px
+            &:hover .img__red
+                display: inline
+            .filter__category
+                &:not(:first-child)
+                    margin-top: 18px
+                .hidden
+                    display: none
+                .filter__menu__list
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    color: #EF5B70 
+                    margin: 16px 0 24px 17px
+                    padding: 11px
+                    border-left: 5px solid #EF5B70
+                    border-bottom: 1px solid #EBEBEB
+                    cursor: pointer
+                .menu__list__item
+                    display: block
+                    padding: 0 16px 0 34px
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    color: #6F6E6E
+                    &:not(:last-child)
+                        margin-bottom: 11px
+            .filter__title
+                text-transform: uppercase
+                font-weight: 600
+                font-size: 14px
+                line-height: 17px
+                color: #000000
+                position: relative
+                z-index: 2
+                margin-right: 11px
+            &:hover .filter__title
+                color: $color-site
+                top: 13px
+                left: 16px
+            img
+                position: relative
+                z-index: 2
+            .img__red
+                display: none
+        .filter__list
+            display: flex
+            .filter__wrap
+                cursor: pointer
+                position: relative
+                .hidden
+                    display: none
+                &:not(:last-child)
+                    margin-right: 28px
+                .list__title
+                    font-weight: normal
+                    font-size: 14px
+                    line-height: 17px
+                    color: #6F6E6E
+                    text-transform: uppercase
+                .filter__size
+                    width: 79px
+                    position: absolute
+                    left: 0
+                    top: 20px
+                    padding: 7px 30px 11px 9px
+                    box-sizing: border-box
+                    background: #FFFFFF
+                    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+                    z-index: 1
+                    div
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 16px
+                        color: #6F6E6E
+                        &:not(:nth-last-child)
+                            margin-bottom: 6px
+
+    .pagination
+        box-sizing: border-box
+        margin: 0 auto
+        width: 284px
+        height: 44px
+        border: solid 1px #C4C4C4
+        border-radius: 3px
+        padding: 12px 16px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        a
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #C4C4C4
+            &:hover
+                color: #EF5B70
+            &:active
+                color: #EF5B70
+
+
+@media screen and ( max-width: 768px )
+    .catalog
+        .filter
+            justify-content: space-between
+            .filter__item
+                padding-right: 0
+            .filter__list
+                .filter__parameters
+                    &:not(:last-child)
+                        margin-right: 6px
+
+
+
+@media screen and ( max-width: 430px )
+    .new__arrivals
+        .arrivals__item
+            flex-direction: column
+
+    .filter__item
+        .filter__title
+            display: none
+        img
+            width: 37px
+            height: 25px
+
+    .fetured__items
+        grid-template-columns: 1fr

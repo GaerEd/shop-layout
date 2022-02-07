@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header>
+        <nav class="header__menu">
+            <div class="container">
+                <div class="menu__item">
+                    <div class="item__left">
+                        <a href="../index.html"><img class="logo" src="../icon/logo.svg" alt="логотип"></a>
+                        <a href="#"><img src="../icon/search.svg" alt="поиск"></a>
+                    </div>
+                    
+                    <div class="item__right">
+                        <a href="#">
+                            <img class="burger" onclick="burgerMenu()" src="../icon/burger.svg" alt="burger">
+                        </a>
+                        <a href="../pages/registration.html"><img class="user" src="../icon/user.svg" alt="пользователь"></a>
+                        <a href="../pages/cart.html"><img class="cart" src="../icon/cart.svg" alt="корзина"></a>
+
+                        <div class="menu__list">
+                            <h3 class="menu__title">MENU</h3>
+                            <ul class="male__list"><span class="red__list">Man</span>
+                                <li class="menu__link">Accessories</li>
+                                <li class="menu__link">Bags</li>
+                                <li class="menu__link">Denim</li>
+                                <li class="menu__link">T-Shirts</li>
+                            </ul>
+
+                            <ul class="womens__list"><span class="red__list">Woman</span>
+                                <li class="menu__link">Accessories</li>
+                                <li class="menu__link">Jackets & Coats</li>
+                                <li class="menu__link">Polos</li>
+                                <li class="menu__link">T-Shirts</li>
+                                <li class="menu__link">Shirts</li>
+                            </ul>
+
+                            <ul class="kids__list"><span class="red__list">Kids</span>
+                                <li class="menu__link">Accessories</li>
+                                <li class="menu__link">Jackets & Coats</li>
+                                <li class="menu__link">Polos</li>
+                                <li class="menu__link">T-Shirts</li>
+                                <li class="menu__link">Shirts</li>
+                                <li class="menu__link">Bags</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="new__arrivals">
+        <div class="container">
+            <div class="arrivals__item">
+                <h1 class="arrivals__title red">NEW ARRIVALS</h1>
+                <nav class="arrivals__menu">
+                    <a href="#">home</a>
+                    /
+                    <a href="#">men</a>
+                    /
+                    <a href="#">new arravals</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper__slider">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="../img/productitle.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/productitle.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/productitle.png" alt="">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+
+    <main class="card__product">
+        <div class="card__block">
+            <h4 class="card__title">WOMEN COLLECTION</h4>
+            <p class="card__subtitle">MOSCHINO CHEAP AND CHIC</p>
+            <p class="card__description">
+                Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals. 
+            </p>
+            <span class="card__price">$561</span>
+
+            <div class="card__parameters">
+                <div class="card__parameters__item">
+                    <div class="filter__parameters">
+                        <span>Trending now</span>
+                        <img src="../icon/arrow.svg" alt="#">
+                    </div>
+                </div>
+                <div class="card__parameters__item">
+                    <div class="filter__parameters__size">
+                        <span>Size</span>
+                        <img src="../icon/arrow.svg" alt="#">
+                    </div>
+                </div>
+                <div class="card__parameters__item">
+                    <div class="filter__parameters">
+                        <span>Price</span>
+                        <img src="../icon/arrow.svg" alt="#">
+                    </div>
+                </div>
+            </div>
+
+            <button class="product__btn"><img class="indent" src="../icon/cartred.svg" alt="добавить в корзину"> Add to Cart</button>
+        </div>
+    </main>
+
+    <main class="catalog container">
+        <div class="fetured__items">
+            <section class="product__item">
+                <div class="product__img">
+                    <img src="../img/men3.png" alt="#">
+                    <div class="product__hover">
+                        <button class="product__btn"><img class="indent" src="../icon/cart.svg" alt="добавить в корзину"> Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="price">$52.00</span>
+            </section>
+    
+            <section class="product__item">
+                <div class="product__img">
+                    <img src="../img/women2.png" alt="#">
+                    <div class="product__hover">
+                        <button class="product__btn"><img class="indent" src="../icon/cart.svg" alt="добавить в корзину"> Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="price">$52.00</span>
+            </section>
+    
+            <section class="product__item">
+                <div class="product__img">
+                    <img src="../img/women3.png" alt="#">
+                    <div class="product__hover">
+                        <button class="product__btn"><img class="indent" src="../icon/cart.svg" alt="добавить в корзину"> Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product__title">ELLERY X M'O CAPSULE</h3>
+                <p class="product__description">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <span class="price">$52.00</span>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__subscribe">
+                <div class="subscribe__left">
+                    <img src="../img/women4.png" alt="фото">
+                    <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+                </div>
+
+                <div class="subscribe__right">
+                    <h2 class="subscribe__title">SUBSCRIBE</h2>
+                    <p class="subscribe__subtitle">FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="form__subscribe" action="#">
+                        <input class="form__email" type="email" placeholder="Enter Your Email">
+                        <input class="form__btn" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <footer class="footer__copy">
+        <div class="container">
+            <div class="footer__item">
+                <p class="copy">© 2021  Brand  All Rights Reserved.</p>
+                <div class="social__networks">
+                    <a class="social__link" href="#"><img src="../icon/facebook.svg" alt="facebook"></a>
+                    <a class="social__link red__insta" href="#"><img src="../icon/insta.svg" alt="instagram"></a>
+                    <a class="social__link" href="#"><img src="../icon/pin.svg" alt="pin"></a>
+                    <a class="social__link" href="#"><img src="../icon/twitter.svg" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/hidden.js"></script>
+    <script src="../js/swiper.js"></script>
+</body>
+</html>
